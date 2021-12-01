@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Price List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <h1>GRS</h1>
+    </header>
+   <div class="middle-container">
+    <form>
+        <table>
+            <tr>
+                <th>Description</th>
+                <th>Image</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td><label for="lays">Lays</label></td>
+                <td><img class="lays" src="lays.png" alt=""></td>
+                <td><button onclick="printPrice('lays')" >Click here</button></td>
+            </tr>
+            <tr>
+                <td><label for="cocacola">CocaCola</label></td>
+                <td><img class="cocacola" src="cocacola.png" alt=""></td>
+                <td><button onclick="printPrice('cocacola')" >Click here</button></td>
+            </tr>
+            <tr>
+                <td><label for="chocolate">Chocolate</label></td>
+                <td><img class="chocolate1" src="chocolate.png" alt=""></td>
+                <td><button onclick="printPrice('chocolate')" >Click here</button></td>
+            </tr>
+            <tr>
+                <td><label for="biscuits">Biscuits</label></td>
+                <td><img class="biscuits" src="biscuits.png" alt=""></td>
+                <td><button onclick="printPrice('biscuits')" >Click here</button></td>
+            </tr>
+            <tr>
+                <td><label for="oreo">OREO</label></td>
+                <td><img class="oreo" src="oreo.png" alt=""></td>
+                <td><button onclick="printPrice('oreo')" >Click here</button></td>
+            </tr>
+            <tr>
+                <td><label for="icecream">Chocobar</label></td>
+                <td><img class="chacobar" src="icecream.png" alt=""></td>
+                <td><button onclick="printPrice('chacobar')" >Click here</button></td>
+            </tr>
+            <tr>
+                <td><label for="apple">Apple</label></td>
+                <td><img class="apple" src="apple.png" alt=""></td>
+                <td><button onclick="printPrice('apple')" >Click here</button></td>
+            </tr>
+            <tr>
+                <td><label for="Orange">Orange</label></td>
+                <td><img class="Orange" src="orange.png" alt=""></td>
+                <td><button onclick="printPrice('Orange')" >Click here</button></td>
+            </tr>
+            <tr>
+                <td><label for="cake">Cake</label></td>
+                <td><img class="cake" src="cake-9754.png" alt=""></td>
+                <td><button onclick="printPrice('cake')" >Click here</button></td>
+            </tr>
+            <tr>
+                <td><label for="butter">Butter</label></td>
+                <td><img class="butter" src="butter.png" alt=""></td>
+                <td><button onclick="printPrice('butter')" >Click here</button></td>
+            </tr>
+
+
+        </table>
+    </form>
+    </div>
+    <footer>
+        <small>© 2021 Gavirangaswamy D G.</small>
+    </footer>
+    <script>
+        function printPrice(name){
+            if(name=="lays"){
+                alert("Price : Rs.10.00");
+            }
+            if(name=="cocacola"){
+                alert("Price : Rs.30.00");
+            }
+            if(name=="chocolate"){
+                alert("Price : Rs.100.00");
+            }
+            if(name=="biscuits"){
+                alert("Price : Rs.14.00");
+            }
+            if(name=="oreo"){
+                alert("Price : Rs.25.00");
+            }
+            if(name=="chacobar"){
+                alert("Price : Rs.25.00");
+            }
+            if(name=="apple"){
+                alert("Price : Rs.250.00/kg");
+            }
+            if(name=="Orange"){
+                alert("Price : Rs.100.00/kg");
+            }
+            if(name=="cake"){
+                alert("Price : Rs.400.00/kg");
+            }
+            if(name=="butter"){
+                alert("Price : Rs.500.00/kg");
+            }
+        }
+    </script>
+</body>
+</html>
