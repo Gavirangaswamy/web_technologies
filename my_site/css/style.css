@@ -69,20 +69,8 @@ hr {
 .java {
   width: 10%;
 }
-.sql {
-  width: 30%;
-  height: 100%;
-}
 .web-tech {
   width: 10%;
-  height: 100%;
-}
-.spring {
-  width: 25%;
-  height: 100%;
-}
-.hibernate {
-  width: 25%;
   height: 100%;
 }
 .skill-row1 {
@@ -100,24 +88,6 @@ hr {
 .skill-row2 {
   width: 100%;
   margin: 50px 0 50px auto;
-}
-.skill-row3 {
-  width: 15%;
-  height: 50%;
-  margin: 50px 0 50px auto;
-  display: inline-block;
-}
-.skill-row4 {
-  width: 20%;
-  height: 50%;
-  margin: 50px 0 50px auto;
-  display: inline-block;
-}
-.skill-row5 {
-  width: 20%;
-  height: 50%;
-  margin: 50px 0 50px auto;
-  display: inline-block;
 }
 .btn {
   background: #11cdd4;
