@@ -9,13 +9,13 @@ function price(name){
         console.log(total);   
     }
     if(name=="cocacola"){
-        var price = 15;
+        var price = 25;
         var qty = document.getElementById("cocacola-qty").value;
         var total = price*qty;
         document.getElementById("cocacola-total").innerHTML=total;
     }
     if(name=="chocolate"){
-        var price = 100;
+        var price = 50;
         var qty = document.getElementById("chocolate-qty").value;
         var total = price*qty;
         document.getElementById("chocolate-total").innerHTML=total;
@@ -27,7 +27,7 @@ function price(name){
         document.getElementById("biscuits-total").innerHTML=total;
     }
     if(name=="oreo"){
-        var price = 30;
+        var price = 35;
         var qty = document.getElementById("oreo-qty").value;
         var total = price*qty;
         document.getElementById("oreo-total").innerHTML=total;
@@ -40,13 +40,13 @@ function price(name){
         document.getElementById("chacobar-total").innerHTML=total;
     }
     if(name=="apple"){
-        var price = 250;
+        var price =250;
         var qty = document.getElementById("Orange-qty").value;
         var total = price*qty;
         document.getElementById("Orange-total").innerHTML=total;
     }
     if(name=="Orange"){
-        var price = 150;
+        var price = 100;
         var qty = document.getElementById("lays-qty").value;
         var total = price*qty;
         document.getElementById("lays-total").innerHTML=total;
@@ -58,7 +58,7 @@ function price(name){
         document.getElementById("cake-total").innerHTML=total;
     }
     if(name=="butter"){
-        var price = 300;
+        var price = 400;
         var qty = document.getElementById("butter-qty").value;
         var total = price*qty;
         document.getElementById("butter-total").innerHTML=total;
