@@ -41,15 +41,15 @@ function price(name){
     }
     if(name=="apple"){
         var price =250;
-        var qty = document.getElementById("Orange-qty").value;
+        var qty = document.getElementById("apple-qty").value;
         var total = price*qty;
-        document.getElementById("Orange-total").innerHTML=total;
+        document.getElementById("apple-total").innerHTML=total;
     }
     if(name=="Orange"){
         var price = 100;
-        var qty = document.getElementById("lays-qty").value;
+        var qty = document.getElementById("Orange-qty").value;
         var total = price*qty;
-        document.getElementById("lays-total").innerHTML=total;
+        document.getElementById("Orange-total").innerHTML=total;
     }
     if(name=="cake"){
         var price = 350;
