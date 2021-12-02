@@ -3,6 +3,7 @@
 <head>
     <title>Price List</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <header>
@@ -20,10 +21,10 @@
             <tr>
                 <td><label for="lays">Lays</label></td>
                 <td><img class="lays" src="lays.png" alt=""></td>
-                <td><input type="number" id="lays-qty" placeholder="please enter a quantity">
-                    <p id="lays-total"></p>
+                <td><input type="number" id="lays"  placeholder="please enter a quantity">
+                    <p  id="print"></p>
                 </td>
-                <td><button onclick="price('lays')" >Price</button></td>
+                <td><input class="button" type="button" value="price" onclick="price('lays')"></td>
             </tr>
             <tr>
                 <td><label for="cocacola">CocaCola</label></td>
@@ -31,7 +32,7 @@
                 <td><input type="number" id="cocacola-qty" placeholder="please enter a quantity">
                     <p id="cocacola-total"></p>
                 </td>
-                <td><button onclick="price('cocacola')" >Price</button></td>
+                <td><input class="button" type="button" value="price" onclick="price('cocacola')"></td>
             </tr>
             <tr>
                 <td><label for="chocolate">Chocolate</label></td>
@@ -39,7 +40,7 @@
                 <td><input type="number" id="chocolate-qty" placeholder="please enter a quantity">
                     <p id="chocolate-total"></p>
                 </td>
-                <td><button onclick="price('chocolate')" >Price</button></td>
+                <td><input class="button" type="button" value="price" onclick="price('chocolate')"></td>
             </tr>
             <tr>
                 <td><label for="biscuits">Biscuits</label></td>
@@ -47,7 +48,7 @@
                 <td><input type="number" id="biscuits-qty" placeholder="please enter a quantity">
                     <p id="biscuits-total"></p>
                 </td>
-                <td><button onclick="price('biscuits')" >Price</button></td>
+                <td><input class="button" type="button" value="price" onclick="price('biscuits')"></td>
             </tr>
             <tr>
                 <td><label for="oreo">OREO</label></td>
@@ -55,7 +56,7 @@
                 <td><input type="number" id="oreo-qty" placeholder="please enter a quantity">
                     <p id="oreo-total"></p>
                 </td>
-                <td><button onclick="price('oreo')" >Price</button></td>
+                <td><input class="button" type="button" value="price" onclick="price('oreo')"></td>
             </tr>
             <tr>
                 <td><label for="chacobar">Chocobar</label></td>
@@ -63,7 +64,7 @@
                 <td><input type="number" id="chacobar-qty" placeholder="please enter a quantity">
                     <p id="chacobar-total"></p>
                 </td>
-                <td><button onclick="price('chacobar')" >Price</button></td>
+                <td><input class="button" type="button" value="price" onclick="price('chacobar')"></td>
             </tr>
             <tr>
                 <td><label for="apple">Apple</label></td>
@@ -71,7 +72,7 @@
                 <td><input type="number" id="apple-qty" placeholder="please enter a quantity">
                     <p id="apple-total"></p>
                 </td>
-                <td><button onclick="price('apple')" >Price</button></td>
+                <td><input class="button" type="button" value="price" onclick="price('apple')"></td>
             </tr>
             <tr>
                 <td><label for="Orange">Orange</label></td>
@@ -79,7 +80,7 @@
                 <td><input type="number" id="Orange-qty" placeholder="please enter a quantity">
                     <p id="Orange-total"></p>
                 </td>
-                <td><button onclick="price('Orange')" >Price</button></td>
+                <td><input class="button" type="button" value="price" onclick="price('Orange')"></td>
             </tr>
             <tr>
                 <td><label for="cake">Cake</label></td>
@@ -87,7 +88,7 @@
                 <td><input type="number" id="cake-qty" placeholder="please enter a quantity">
                     <p id="cake-total"></p>
                 </td>
-                <td><button onclick="price('cake')" >Price</button></td>
+                <td><input class="button" type="button" value="price" onclick="price('cake')"></td>
             </tr>
             <tr>
                 <td><label for="butter">Butter</label></td>
@@ -95,7 +96,7 @@
                 <td><input type="number" id="butter-qty" placeholder="please enter a quantity">
                     <p id="butter-total"></p>
                 </td>
-                <td><button onclick="price('butter')" >Price</button></td>
+                <td><input class="button" type="button" value="price" onclick="price('butter')"></td>
             </tr>
 
 
@@ -105,69 +106,6 @@
     <footer>
         <small>© 2021 Gavirangaswamy D G.</small>
     </footer>
-    <script>
-        function price(name){
-            if(name=="lays"){
-                var price = 10;
-                var qty = document.getElementById("lays-qty").value;
-                var total = price*qty;
-                document.getElementById("lays-total").innerHTML=total;     
-            }
-            if(name=="cocacola"){
-                var price = 10;
-                var qty = document.getElementById("cocacola-qty").value;
-                var total = price*qty;
-                document.getElementById("cocacola-total").innerHTML=total;
-            }
-            if(name=="chocolate"){
-                var price = 10;
-                var qty = document.getElementById("chocolate-qty").value;
-                var total = price*qty;
-                document.getElementById("chocolate-total").innerHTML=total;
-            }
-            if(name=="biscuits"){
-                var price = 10;
-                var qty = document.getElementById("biscuits-qty").value;
-                var total = price*qty;
-                document.getElementById("biscuits-total").innerHTML=total;
-            }
-            if(name=="oreo"){
-                var price = 10;
-                var qty = document.getElementById("oreo-qty").value;
-                var total = price*qty;
-                document.getElementById("oreo-total").innerHTML=total;
-            }
-            if(name=="chacobar"){
-                var price = 10;
-                var qty = document.getElementById("chacobar-qty").value;
-                var total = price*qty;
-                document.getElementById("chacobar-total").innerHTML=total;
-            }
-            if(name=="apple"){
-                var price = 10;
-                var qty = document.getElementById("Orange-qty").value;
-                var total = price*qty;
-                document.getElementById("Orange-total").innerHTML=total;
-            }
-            if(name=="Orange"){
-                var price = 10;
-                var qty = document.getElementById("lays-qty").value;
-                var total = price*qty;
-                document.getElementById("lays-total").innerHTML=total;
-            }
-            if(name=="cake"){
-                var price = 10;
-                var qty = document.getElementById("cake-qty").value;
-                var total = price*qty;
-                document.getElementById("cake-total").innerHTML=total;
-            }
-            if(name=="butter"){
-                var price = 10;
-                var qty = document.getElementById("butter-qty").value;
-                var total = price*qty;
-                document.getElementById("butter-total").innerHTML=total;
-            }
-        }
-    </script>
+    
 </body>
 </html>
