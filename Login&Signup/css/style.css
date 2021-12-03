@@ -133,3 +133,9 @@ span {
 .fas {
   font-size: 30px;
 }
+#message,
+#login {
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
