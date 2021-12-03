@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/js/index.js"></script>
+</head>
+<body>
+    <header>
+       <h1>GRS</h1>
+       <div class="signup"><a href="/Login/index.html"><img src="/images/login.png" alt=""></a></div>
+    </header>
+   <div class="middle-container">
+    
+    <form>
+        <h1 class="form-heading">Register Here</h1>
+        <p id="message"></p>
+        <label for="firstname">Firstname :</label><br>
+        <input type="text" name="firstname" placeholder="Enter your Firstname" required id="fName"><br><br>
+        <label for="lastname">Lastname :</label><br>
+        <input type="text" name="lastname" placeholder="Enter your Lastname" required id="lName"><br><br>
+        <label for="email">Email :</label><br>
+        <input type="email" name="email" placeholder="Enter your email" id="email" required><br><br>
+        <label for="phone">Mobile Number :</label><br>
+        <input type="tel" name="phone" placeholder="Enter your Mobile Number" id="phone" required><br><br>
+        <label for="userid">Username :</label><br>
+        <input type="text" name="userid" placeholder="Enter your Username" required id="username"><br><br>
+        <label for="password">Password :</label><br>
+        <input type="password" placeholder="Enter your Password" id="pass" required><br><br>
+        <label for="cnfpassword">Confirm Password :</label><br>
+        <input type="password" placeholder="Enter your Password" id="cnfpassword" required><br><br>
+        <div class="checkbox" ><input type="checkbox" class="check-box" required><span class="signup-span">I agree terms and conditions.</span></div><br><br>
+        <input class="btn" type="button" onclick="regValidation()" value="Register">
+    </form>
+    </div>
+    <footer>
+        <small>© 2021 Gavirangaswamy D G.</small>
+    </footer>
+</body>
+</html>
