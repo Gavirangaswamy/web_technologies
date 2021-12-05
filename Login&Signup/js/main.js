@@ -36,17 +36,15 @@ function regValidation(){
     if(username!==""){
         if(username.length<6 || username.length>12 ){
             msg.innerHTML='<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   Username is invalid";
-         }else if(fName===""){
+        }else if(fName===""){
             msg.innerHTML='<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   First Name is Empty";
-         }else if(lName===""){
+        }else if(lName===""){
             msg.innerHTML='<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   Last Name is Empty";
-         }else if(password===""){
+        }else if(password===""){
              msg.innerHTML='<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   Password is Empty";
-         }else if(password.length<5){
-             msg.innerHTML='<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   Password is Week";
-         }else if(password.length>5 && password.length<8){
-             msg.innerHTML='<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   Password is Strong";
-         }else if(cnfpassword!==password){
+        }else if(cnfpassword===""){
+            msg.innerHTML = '<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   Comfirm Password is Empty";
+        }else if(cnfpassword!==password){
             msg.innerHTML = '<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   password mismatch";
         }else if(phone.length<10){
             msg.innerHTML = '<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   Invalid Phone Number";
@@ -54,9 +52,10 @@ function regValidation(){
             msg.innerHTML = '<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   Invalid mailid";
         }else{
             msg.innerHTML = "Registration Successful"; 
-            if(msg.innerHTML==="Registration Successful"){
+            if(msg.innerHTML==="Registration Successful")
+            {
                 msg.style.color="green";
-                }
+            }
         }
     }else{
         msg.innerHTML='<i class="fas fa-exclamation-circle" style ="font-size:20px"></i>'+ " Username is Empty";
@@ -64,3 +63,32 @@ function regValidation(){
     
 }
     
+var password = document.getElementById("pass");
+var msg = document.getElementById("pmsg");
+var str = document.getElementById("strength");
+
+password.addEventListener("input", function(){
+    if(password.value.length>0){
+        msg.style.display = "block";
+    }
+    else{
+        msg.style.display = "none";
+    }
+    if(password.value.length<4){
+        str.innerHTML = "Week"
+        str.style.color = "#ff5925"
+        password.style.borderColor = "#ff5925"
+    }
+    else if(password.value.length>=4 && password.value.length<8){
+        str.innerHTML = "Medium"
+        str.style.color = "yellow";
+        password.style.borderColor = "yellow"
+    }
+    else if(password.value.length>=8){
+        str.innerHTML = "Strong"
+        str.style.color = "#26d730"
+        password.style.borderColor = "#26d730"
+        //msg.style.display = "none";
+    }
+    
+});

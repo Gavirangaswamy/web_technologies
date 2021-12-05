@@ -90,7 +90,7 @@ form {
   width: 35%;
   padding: 10px 30px;
   cursor: pointer;
-  margin: 0% 5%;
+  margin: 5% 5%;
   background: #2f5d62;
   border: 0;
   outline: none;
@@ -122,8 +122,8 @@ small {
 input,
 select {
   width: 100%;
-  padding: 20px 0 0 0;
-  margin: 5px 0;
+  padding: 15px 0 0 0;
+  margin: 5px 0 15px;
   border-left: 0;
   border-top: 0;
   border-right: 0;
@@ -131,19 +131,20 @@ select {
   outline: none;
   background: transparent;
 }
+
 .checkbox {
   width: 10%;
 }
 span {
   color: #777;
   font-size: 15px;
-  bottom: 33%;
+  bottom: 34%;
   position: absolute;
 }
 .signup-span {
   color: #777;
   font-size: 15px;
-  bottom: 14.5%;
+  bottom: 18%;
   position: absolute;
 }
 .fpassword a {
@@ -151,6 +152,7 @@ span {
   color: #000;
   margin-left: 5%;
 }
+
 .fas {
   font-size: 30px;
 }
@@ -159,4 +161,12 @@ span {
   color: red;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 12px;
+}
+#pmsg {
+  width: 100%;
+  display: none;
+  margin-top: 0;
+}
+#strength {
+  position: inherit;
 }
