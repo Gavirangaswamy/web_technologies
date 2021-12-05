@@ -84,7 +84,26 @@ form {
   background-color: #fff;
   color: #000;
   border: #000 1px solid;
-  transition: 0.6s;
+  transition: 0.5s;
+}
+.reg-btn {
+  width: 35%;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin: 0% 5%;
+  background: #2f5d62;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  color: #fff;
+  text-align: center;
+  display: inline;
+}
+.reg-btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: #000 1px solid;
+  transition: 0.5s;
 }
 footer {
   position: fixed;
@@ -124,7 +143,7 @@ span {
 .signup-span {
   color: #777;
   font-size: 15px;
-  bottom: 17%;
+  bottom: 14.5%;
   position: absolute;
 }
 .fpassword a {
