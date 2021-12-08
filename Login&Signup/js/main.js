@@ -36,7 +36,9 @@ function regValidation(){
     if(username!==""){
         if(username.length<6 || username.length>12 ){
             msg.innerHTML='<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   Username is invalid";
-        }else if(fName===""){
+        }else if(username!=username.match(/^[a-z0-9]+$/)){
+            msg.innerHTML='<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   Username is invalid";
+        }else if(fName!==""){
             msg.innerHTML='<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   First Name is Empty";
         }else if(lName===""){
             msg.innerHTML='<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   Last Name is Empty";
@@ -84,11 +86,11 @@ password.addEventListener("input", function(){
         str.style.color = "yellow";
         password.style.borderColor = "yellow"
     }
-    else if(password.value.length>=8){
+    else if(password.value.length>=9){
         str.innerHTML = "Strong"
-        str.style.color = "#26d730"
-        password.style.borderColor = "#26d730"
-        //msg.style.display = "none";
+        str.style.color = "green"
+        password.style.borderColor = "green"
+        // msg.style.display = "none";
     }
     
 });
