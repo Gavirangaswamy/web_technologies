@@ -36,9 +36,10 @@ function regValidation(){
     if(username!==""){
         if(username.length<6 || username.length>12 ){
             msg.innerHTML='<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   Username is invalid";
-        }else if(username!=username.match(/^[a-z0-9]+$/)){
-            msg.innerHTML='<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   Username is invalid";
-        }else if(fName!==""){
+            if(username!=username.match(/^[a-z0-9]+$/)){
+                msg.innerHTML='<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   Username is invalid";
+             }
+        }else if(fName==""){
             msg.innerHTML='<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   First Name is Empty";
         }else if(lName===""){
             msg.innerHTML='<i class="fas fa-exclamation-circle" style ="font-size:20px;"></i>'+"   Last Name is Empty";
